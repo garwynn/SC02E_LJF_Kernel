@@ -28,12 +28,12 @@ export LC_ALL
 
 if [ -z "$KBUILD_BUILD_VERSION" ]; then
 	if [ -r .version ]; then
-		VERSION="Garwynn_SC-02E_LJF_v0.1.0"
+		VERSION=Garwynn_LJF_v0.1.0
 	else
-		VERSION="Garwynn_SC-02E_LJF_v0.1.0"
+		VERSION=Garwynn_LJF_v0.1.0
 	fi
 else
-	VERSION="Garwynn_SC-02E_LJF_v0.1.0"
+	VERSION=Garwynn_LJF_v0.1.0
 fi
 
 if [ -z "$KBUILD_BUILD_TIMESTAMP" ]; then
