@@ -727,10 +727,7 @@ service mobex-daemon /system/bin/npsmobex
 service surfaceflinger /system/bin/surfaceflinger
     class main
     user system
-    group system graphics
-    onrestart restart gsiff_daemon
-    onrestart restart media
-    onrestart restart netd
+    group graphics
     onrestart restart zygote
 
 service zygote /system/bin/app_process -Xzygote /system/bin --zygote --start-system-server
@@ -755,7 +752,7 @@ service drm /system/bin/drmserver
 service media /system/bin/mediaserver
     class main
     user media
-    group system audio camera inet net_bt net_bt_admin net_bw_acct drmrpc sdcard_rw sdcard_r skt lgt_gid media_rw graphics
+    group system audio camera inet net_bt net_bt_admin net_bw_acct drmrpc sdcard_rw sdcard_r skt lgt_gid media_rw
 	ioprio rt 4
 
 service powersnd /system/bin/samsungpowersoundplay
@@ -768,14 +765,14 @@ service powersnd /system/bin/samsungpowersoundplay
 service bootanim /system/bin/bootanimation
     class main
     user graphics
-    group graphics system
+    group graphics
     disabled
     oneshot
 
 service samsungani /system/bin/samsungani
     class main
     user graphics
-    group graphics system
+    group graphics
     disabled
     oneshot
 

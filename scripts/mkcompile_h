@@ -28,12 +28,12 @@ export LC_ALL
 
 if [ -z "$KBUILD_BUILD_VERSION" ]; then
 	if [ -r .version ]; then
-		VERSION=Garwynn_LJF_v0.1.0
+		VERSION="SC-02E_LJF_v0.1.2"
 	else
-		VERSION=Garwynn_LJF_v0.1.0
+		VERSION="SC-02E_LJF_v0.1.2"
 	fi
 else
-	VERSION=Garwynn_LJF_v0.1.0
+	VERSION="SC-02E_LJF_v0.1.2"
 fi
 
 if [ -z "$KBUILD_BUILD_TIMESTAMP" ]; then
@@ -42,9 +42,9 @@ else
 	TIMESTAMP=$KBUILD_BUILD_TIMESTAMP
 fi
 if test -z "$KBUILD_BUILD_USER"; then
-	LINUX_COMPILE_BY=Garwynn
+	LINUX_COMPILE_BY="Garwynn"
 else
-	LINUX_COMPILE_BY=Garwynn
+	LINUX_COMPILE_BY="Garwynn"
 fi
 if test -z "$KBUILD_BUILD_HOST"; then
 	LINUX_COMPILE_HOST=SXTPBuildBox
